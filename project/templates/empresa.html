@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Dades de Empresa{% endblock title %}
+
+{% block content %}
+{% for empresa in dataEmp %}
+	<h1>{{ empresa.nom_empresa }}</h1>
+{% endfor %}
+
+{% endblock content %}

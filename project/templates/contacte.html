@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacte{% endblock title %}
+
+{% block content %}
+{% for Contacte in Contactes %}
+	<h1>{{ contacte.contactes }}</h1>
+{% endfor %}
+
+{% endblock content %}

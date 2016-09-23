@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+projecte
+db.projecte
+db.sqlite3
+.idea
+.DS_Store

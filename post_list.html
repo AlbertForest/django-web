@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='ca'>
+<head>
+	<meta charset="UTF-8">
+	<title>PROVA Django</title>
+	<link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+	<h1>llistat de noticies</p>
+	{% for noticia in noticies %}
+		<div id="bloc">
+			<h2>{{ noticia.titol_post }}</h2>
+			<p>{{ noticia.text_post }}</p>
+		</div>
+	{% endfor %}
+</body>	
+</html>
